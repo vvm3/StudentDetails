@@ -1,0 +1,28 @@
+{
+    "students": [
+        {
+            "srno": "1",
+            "name": "virat",
+            "address": "delhi",
+            "age": 36,
+            "bloodGroup": "ab+",
+            "email": "virat@gmial.com"
+        },
+        {
+            "srno": "2",
+            "name": "rohit",
+            "address": "mumbai",
+            "age": 39,
+            "bloodGroup": "a+",
+            "email": "rohit@gmial.com"
+        },
+        {
+            "srno": "3",
+            "name": "ravindra",
+            "address": "gujrat",
+            "age": 36,
+            "bloodGroup": "b+",
+            "email": "ravi@gmial.com"
+        }
+    ]
+}
