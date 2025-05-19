@@ -1,3 +1,12 @@
+
+live link : https://vvm3.github.io/StudentDetails/
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
