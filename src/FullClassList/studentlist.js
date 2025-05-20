@@ -26,7 +26,7 @@ function StudentList() {
   }, []);
 
   const clickfun = (student) => {
-    navigate("/student", { state: student });
+    navigate("/StudentDetails/student", { state: student });
   };
 
   const textChange = (e) => {
