@@ -1,10 +1,9 @@
 import React from "react";
 import Student from "./StudentPage/student";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
-  BrowserRouter
 } from "react-router-dom";
 import StudentList from "./FullClassList/studentlist";
 
@@ -14,8 +13,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<StudentList />} />
-          <Route path="/student" element={<Student />} />
+          <Route path="/StudentDetails" element={<StudentList />} />
+          <Route path="/StudentDetails/student" element={<Student />} />
         </Routes>
       </BrowserRouter>
     </>
