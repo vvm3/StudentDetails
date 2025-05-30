@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import './studentlist.css';
+
 import studentData from "../Data/studentData.json";
 import { useNavigate } from 'react-router-dom';
 
@@ -64,9 +66,9 @@ function StudentList() {
   };
 
   return (
-    <div>
+    <div className="student-list-container">
       <h2>Student List</h2>
-      <table border="1" cellPadding="5">
+    <table className="student-table">
         <thead>
           <tr>
             <th>Sr.No</th>
@@ -76,10 +78,11 @@ function StudentList() {
         <tbody>
           {sname.map((student) => (
             <tr key={student.srno}>
-              <td>{student.srno}</td>
+              <td className="stduent-srno">{student.srno}</td>
               <td>
                 <span
-                  style={{ cursor: "pointer", color: "blue", textDecoration: "underline" }}
+                  className="student-name"
+                  // style={{ cursor: "pointer", color: "blue", textDecoration: "underline" }}
                   onClick={() => clickfun(student)}
                 >
                   {student.name}
@@ -87,21 +90,31 @@ function StudentList() {
               </td>
             </tr>
           ))}
-          <tr>
-            <td>{sname.length + 1}</td>
-            <td>
-              <input
-                type="text"
-                placeholder="Enter name"
-                name="name"
-                value={sname2.name}
-                onChange={textChange}
-              />
-              <button onClick={add}>Add</button>
-            </td>
-          </tr>
+          {/* <tr> */}
+          {/* <td>{sname.length + 1}</td> */}
+          {/* <td> */}
+          {/* <input
+            className="student-input"
+            type="text"
+            placeholder="Enter name"
+            name="name"
+            value={sname2.name}
+            onChange={textChange}
+          />
+          <button className="student-add-button" onClick={add}>Add</button> */}
+          {/* </td> */}
+          {/* </tr> */}
         </tbody>
       </table>
+      <input
+        className="student-input"
+        type="text"
+        placeholder="Enter name"
+        name="name"
+        value={sname2.name}
+        onChange={textChange}
+      />
+      <button className="student-add-button" onClick={add}>Add</button>
     </div>
   );
 }
